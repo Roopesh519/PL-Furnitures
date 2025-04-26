@@ -20,8 +20,8 @@
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
-    bottom: 45px;
+    right: 25px;
+    bottom: 180px;
     z-index: 99;
 }
 
@@ -620,4 +620,49 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  
+df-messenger {
+  --df-messenger-bot-message: #f1f1f1;
+  --df-messenger-user-message: #d1e7dd;
+  --df-messenger-button-titlebar-color: #0d6efd;
+  --df-messenger-titlebar-color: #0d6efd;
+  --df-messenger-font-color: #000000;
+  --df-messenger-send-icon: #0d6efd;
+  --df-messenger-user-font-color: #000;
+  --df-messenger-chat-background-color: #ffffff;
+  --df-messenger-input-placeholder-font-color: #666;
+  --df-messenger-input-box-font-color: #000;
+  --df-messenger-input-box-color: #f8f9fa;
+  --df-messenger-minimized-chat-icon: #0d6efd;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1020;
+  position: fixed;
+}
+
+@media (max-width: 767px) {
+    df-messenger {
+      top: 1000px !important;
+      bottom: auto !important;
+    }
 }
