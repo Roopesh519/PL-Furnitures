@@ -270,7 +270,19 @@
 
 
     <!-- Back to Top -->
-        <a id="whatsapp-button" href="https://wa.me/919731391878?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services!" target="_blank">
+        <!-- Include Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <!-- Customize it with CSS -->
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Support"
+        agent-id="287d3c00-be8f-4ab4-8bcc-c67f83186576"
+        language-code="en"
+        chat-icon="img/image.png"
+    ></df-messenger>
+
+    <a id="whatsapp-button" href="https://wa.me/919731391878?text=Hi%20there%2C%20I%27m%20interested%20in%20your%20services!" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
     <!-- Back to Top -->
